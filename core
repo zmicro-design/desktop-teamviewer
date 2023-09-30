@@ -55,7 +55,7 @@ install() {
     latest)
       case $arch in
       arm64 | amd64)
-        cache_file_checksum_expect="cbe42cf8ecc33b8e0c23849e2743256a8dcd1895c936b3d73d5ba96c5671bc6d"
+        cache_file_checksum_expect="a7e80018df3fc8f090998ab9626f192ce153fdf3663c563d35fea973d0087706"
         ;;
       esac
       ;;
@@ -90,12 +90,12 @@ install() {
     os::download $cache_file $url
   fi
 
-  local app_name="TeamViewer.app/"
+  local app_name="TeamViewer.app"
   # install
   log::info "[$(timestamp)][desktop][$name] installing $cache_file ..."
   case $arch in
   arm64 | amd64)
-    install::dmg $cache_file ${name} "${app_name}" "/Volumes/Google Chrome"
+    install::dmg $cache_file ${name} "${app_name}" "/Volumes/TeamViewer" "Install TeamViewer.app"
     # install::zip $cache_file iTerm2 iTerm.app
     ;;
   *)

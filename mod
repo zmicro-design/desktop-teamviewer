@@ -1,5 +1,5 @@
 NAME=teamviewer
-VERSION=v0.0.1
+VERSION=v0.0.2
 MODULE=desktop
-DESCRIPTION="teamviewer"
-HOMEPAGE="teamviewer"
+DESCRIPTION="The global leader in remote connectivity"
+HOMEPAGE="https://www.teamviewer.com/"
